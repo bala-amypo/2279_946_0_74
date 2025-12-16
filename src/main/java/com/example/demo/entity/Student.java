@@ -3,7 +3,7 @@ package com.example.demo.entity;
 public class Student{
     private Long id;
     private String name;
-    private Strig email;
+    private String email;
     private float cgpa;
 
     public Long getId(){
@@ -12,22 +12,22 @@ public class Student{
     public void setId(int id){
         this.id=id;
     }
-    public String getStuname(){
-        return stuname;
+    public String getName(){
+        return Name;
     }
-    public void setId(String stuname){
-        this.stuname=stuname;
+    public void setId(String name){
+        this.name=name;
     }
-    public String getStuemail(){
-        return getStuemail;
+    public String getEmail(){
+        return email;
     }
-    public void setId(String getstuemail){
-        this.stuname=stuemail;
+    public void setId(String email){
+        this.email=email;
     }
-    public String getStuname(){
-        return stuname;
+    public float getCgpa(){
+        return cgpa;
     }
-    public void setId(String stuname){
-        this.stuname=stuname;
+    public void setId(float cgpa){
+        this.cgpa=cgpa;
     }
 }
