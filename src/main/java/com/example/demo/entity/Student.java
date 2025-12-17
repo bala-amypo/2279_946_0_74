@@ -2,7 +2,10 @@ package com.example.demo.entity;
 
 import jakarta.persistence.*;
 
+@entity
+
 public class Student{
+    @id
     private Long id;
     private String name;
     private String email;
