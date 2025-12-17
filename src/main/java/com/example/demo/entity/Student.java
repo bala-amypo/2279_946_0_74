@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 @entity
 
 public class Student{
-    @id
+    @Id
     @Generated
     private Long id;
     private String name;
