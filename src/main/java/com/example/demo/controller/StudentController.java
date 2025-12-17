@@ -1,7 +1,9 @@
 package com.example.demo.controller;
 
+import java.util.*;
 import java.util.List;
 
+import org.springframework.web.bind.annotation.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,7 +28,7 @@ public class StudentController {
         return ser.fetchRecord();
     }
     @GetMapping("/fetchdatabyid/{id}")
-    public Optional<Student> fetchDataById(@PathVariale int id){
+    public Optional<Student> fetchDataById(@PathVariable int id){
         return ser.fetchDataById(id);
     }
 }
