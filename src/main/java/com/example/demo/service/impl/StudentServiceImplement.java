@@ -22,5 +22,7 @@ public class StudentServiceImplement implements StudentService{
     public List<Student> fetchRecord(){
         return repo.findAll();
     }
-    public Optional<Student> fetchData
+    public Optional<Student> fetchDataById(int id){
+        return repo.findById(id);
+    }
 }

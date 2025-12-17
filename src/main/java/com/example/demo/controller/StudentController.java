@@ -25,8 +25,8 @@ public class StudentController {
     public List<Student> fetchRecord(){
         return ser.fetchRecord();
     }
-    @GetMapping("/fetchbyid/{id}")
-    public List<Student> fetch(){
-        return ser.fetchRecord();
+    @GetMapping("/fetchdatabyid/{id}")
+    public Optional<Student> fetchDataById(@PathVariale int id){
+        return ser.fetchDataById(id);
     }
 }
