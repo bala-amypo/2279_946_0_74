@@ -36,8 +36,6 @@ public class StudentController {
     
     stu.setId(id);
     ser.createData(stu);
-
     return "Data Updated Successfully";
     }
-
 }
