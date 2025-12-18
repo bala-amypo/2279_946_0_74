@@ -23,11 +23,11 @@ public class StudentServiceImplement implements StudentService{
     public List<Student> fetchRecord(){
         return repo.findAll();
     }
-    // public Optional<Student> fetchDataById(int id){
-    //     return repo.findById(id);
-    // }
+    public Optional<Student> fetchDataById(int id){
+        return repo.findById(id);
+    }
     @Override
-    public Optional<Student> deleteData(int id){
-        return repo.deleteDataById(id);
+    public void deleteData(int id){
+         repo.deleteById(id);
     }
 }
