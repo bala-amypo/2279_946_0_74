@@ -31,11 +31,19 @@ public class StudentController {
     public Optional<Student> fetchDataById(@PathVariable int id){
         return ser.fetchDataById(id);
     }     
-    @PutMapping("/updatedata/{id}")
+    @DeltMapping("/updatedata/{id}")
     public String fetchDataById(@PathVariable int id,@requestBody Student stu){
-    
-    stu.setId(id);
+        Optional<Student> fetchDataById(@PathVariable int id);
+        if(student.isPresent()){
+            stu.setId(id);
     ser.createData(stu);
     return "Data Updated Successfully";
+
+        }
+        else{
+            return id+ "not found";
+        }
+    
+    
     }
 }
