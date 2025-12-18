@@ -28,6 +28,6 @@ public class StudentServiceImplement implements StudentService{
     // }
     @Override
     public Optional<Student> deleteData(int id){
-        return repo.deleteById(id);
+        return repo.deleteDataById(id);
     }
 }
