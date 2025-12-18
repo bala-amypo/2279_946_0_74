@@ -31,7 +31,8 @@ public class StudentController {
     public Optional<Student> fetchDataById(@PathVariable int id){
         return ser.fetchDataById(id);
     }     
-    @DeltMapping("/updatedata/{id}")
+    //@PutMapping ("/updatedata/{id}")
+    @DeleteMapping("/deletedata/{id}")
     public String fetchDataById(@PathVariable int id,@requestBody Student stu){
         Optional<Student> fetchDataById(@PathVariable int id);
         if(student.isPresent()){
